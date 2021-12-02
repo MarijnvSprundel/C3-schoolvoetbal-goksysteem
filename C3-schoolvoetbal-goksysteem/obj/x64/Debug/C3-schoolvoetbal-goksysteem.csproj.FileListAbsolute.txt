@@ -10,7 +10,6 @@ C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksyst
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\C3-schoolvoetbal-goksysteem.build.appxrecipe
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\System.Runtime.dll
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.csproj.AssemblyReference.cache
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\App.g.i.cs
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\App.g.cs
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\View\MainPage.g.i.cs
@@ -22,7 +21,6 @@ C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksyst
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\View\MainPage.xbf
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.csproj.CoreCompileInputs.cache
-C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.csproj.CopyComplete
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.exe
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.pdb
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\ResourceHandlingTask.state
@@ -43,3 +41,4 @@ C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksyst
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.csproj.AssemblyReference.cache
