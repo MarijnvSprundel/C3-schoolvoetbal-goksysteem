@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="C3_schoolvoetbal_goksysteem.View.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:C3_schoolvoetbal_goksysteem.View"
+    xmlns:ViewModel="using:C3_schoolvoetbal_goksysteem.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+
+    <Page.DataContext>
+        <ViewModel:MainPageViewModel/>
+    </Page.DataContext>
+
+    <StackPanel VerticalAlignment="Center" Width="200">
+        <TextBox PlaceholderText="Username" TextAlignment="Center" Margin="0,0,0,10"/>
+        <TextBox PlaceholderText="Email" TextAlignment="Center" Margin="0,0,0,10"/>
+        <TextBox PlaceholderText="Password" TextAlignment="Center" Margin="0,0,0,10"/>
+        <Button Content="Submit" HorizontalAlignment="Center"/>
+
+    </StackPanel>
+</Page>
+
