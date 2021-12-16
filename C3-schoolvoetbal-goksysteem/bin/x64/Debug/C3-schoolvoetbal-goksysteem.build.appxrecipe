@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\View\Login.xbf">
+      <PackagePath>View\Login.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
     </AppxPackagedFile>

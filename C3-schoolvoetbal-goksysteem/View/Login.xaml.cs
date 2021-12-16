@@ -13,27 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace C3_schoolvoetbal_goksysteem
+namespace C3_schoolvoetbal_goksysteem.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Login : Page
     {
-        public MainPage()
+        public Login()
         {
             this.InitializeComponent();
-        }
-
-        private void RegisterButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(View.Register));
-        }
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(View.Login));
         }
     }
 }
