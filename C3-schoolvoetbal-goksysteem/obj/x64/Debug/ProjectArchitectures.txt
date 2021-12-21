@@ -1,1 +1,1 @@
-C:\Users\macti\source\repos\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem.csproj;x64
+C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem.csproj;x64

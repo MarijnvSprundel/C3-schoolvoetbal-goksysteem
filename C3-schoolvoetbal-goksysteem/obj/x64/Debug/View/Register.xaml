@@ -10,14 +10,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
 
     <Page.DataContext>
-        <ViewModel:MainPageViewModel/>
+        <ViewModel:ViewModel/>
     </Page.DataContext>
 
     <StackPanel VerticalAlignment="Center" Width="200">
         <TextBox PlaceholderText="Username" TextAlignment="Center" Margin="0,0,0,10"/>
         <TextBox PlaceholderText="Email" TextAlignment="Center" Margin="0,0,0,10"/>
         <TextBox PlaceholderText="Password" TextAlignment="Center" Margin="0,0,0,10"/>
-        <Button Content="Submit" HorizontalAlignment="Center"/>
+        <Button Content="Submit" HorizontalAlignment="Center" Command="{Binding RegisterCommand}"/>
 
     </StackPanel>
 </Page>

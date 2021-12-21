@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macti\\source\\repos\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj": {}
+    "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macti\\source\\repos\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj": {
+    "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macti\\source\\repos\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj",
+        "projectUniqueName": "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj",
         "projectName": "C3-schoolvoetbal-goksysteem",
-        "projectPath": "C:\\Users\\macti\\source\\repos\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj",
+        "projectPath": "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj",
         "packagesPath": "C:\\Users\\macti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macti\\source\\repos\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\obj\\",
+        "outputPath": "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -42,6 +42,14 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
+            },
+            "MvvmLight": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
             }
           },
           "imports": [
