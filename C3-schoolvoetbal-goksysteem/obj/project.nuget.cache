@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ozc6W8LAXysjx3Ab8foWRXqeeywNzcRT2GT/40/WWHMlL+wQWkCjXILli/u8IWWsWXxkKyCezyfOnuC7qGSPBw==",
+  "dgSpecHash": "LmowbPnGz/FkQPZQW/3XHNJD51W6gKuhj6wScac8jM5kiTDMnwT/ivww92OWOWIg3dS67nUSk/dGv/f4B66BjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\macti\\Documents\\school\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem\\C3-schoolvoetbal-goksysteem.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\macti\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\macti\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
@@ -32,7 +33,9 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Users\\macti\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
     "C:\\Users\\macti\\.nuget\\packages\\system.data.sqlite\\1.0.115.5\\system.data.sqlite.1.0.115.5.nupkg.sha512",
-    "C:\\Users\\macti\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+    "C:\\Users\\macti\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\macti\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\macti\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

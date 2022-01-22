@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\C3-schoolvoetbal-goksysteem.exe">
       <PackagePath>entrypoint\C3-schoolvoetbal-goksysteem.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\bcrypt.net-next\4.0.2\lib\netstandard2.0\BCrypt.Net-Next.dll">
+      <PackagePath>BCrypt.Net-Next.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
     </AppxPackagedFile>
@@ -48,6 +51,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.115.5\lib\netstandard2.0\System.Data.SQLite.dll">
       <PackagePath>System.Data.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>

@@ -14,9 +14,10 @@
     </Page.DataContext>
 
     <StackPanel VerticalAlignment="Center" Width="200">
-        <TextBox PlaceholderText="Username" TextAlignment="Center" Margin="0,0,0,10"/>
-        <TextBox PlaceholderText="Password" TextAlignment="Center" Margin="0,0,0,10"/>
-        <Button Content="Submit" HorizontalAlignment="Center"/>
+        <TextBlock Text="{Binding ErrorMessage}" HorizontalAlignment="Center" Foreground="Red" Visibility="{Binding ErrorVisibility, Mode=TwoWay}"/>
+        <TextBox PlaceholderText="Username" Margin="0,0,0,10" Text="{Binding Username, Mode=TwoWay}"/>
+        <PasswordBox PlaceholderText="Password" Margin="0,0,0,10" Password="{Binding Password, Mode=TwoWay}" />
+        <Button Content="Submit" HorizontalAlignment="Center" Command="{Binding LoginCommand}"/>
 
     </StackPanel>
 </Page>

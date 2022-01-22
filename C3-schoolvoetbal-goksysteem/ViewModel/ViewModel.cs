@@ -1,26 +1,52 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using BC = BCrypt.Net.BCrypt;
 using System;
-using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Windows.Storage;
+using Windows.UI.Xaml;
 
 namespace C3_schoolvoetbal_goksysteem.ViewModel
 {
-    public class ViewModel
+    public class ViewModel: INotifyPropertyChanged
     {
-        private int id = 1;
-        private string username;
+        public string Username { get; set; }
         private string password;
-        private string email;
+        public string Password { get; set; }
+        public string Email { get; set; }
+
+        private Visibility errorVisibility = Visibility.Collapsed;
+        public Visibility ErrorVisibility
+        {
+            get { return errorVisibility; }
+            set
+            {
+                Set(ref errorVisibility, value);
+            }
+        }
+
+        private string errorMessage;
+        public string ErrorMessage
+        {
+            get { return errorMessage; }
+            set
+            {
+                Set(ref errorMessage, value);
+            }
+        }
         public ICommand RegisterCommand { get; set; }
         public ICommand LoginCommand { get; set; }
 
+        SQLiteConnection sqlite_conn;
+
+        
+
         public ViewModel()
         {
+            sqlite_conn = CreateConnection();
             RegisterCommand = new RelayCommand(() =>
             {
                 login(true);
@@ -34,15 +60,49 @@ namespace C3_schoolvoetbal_goksysteem.ViewModel
 
         private void login(bool register = false)
         {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = CreateConnection();
+            
+            if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password) || (register && string.IsNullOrEmpty(Email)))
+            {
+                ErrorMessage = "Vul alle velden in";
+                ErrorVisibility = Visibility.Visible;
+                return;
+            }
+            
+            SQLiteDataReader selectUserReader;
+            SQLiteCommand selectUserCmd;
+            selectUserCmd = sqlite_conn.CreateCommand();
+            selectUserCmd.CommandText = $"SELECT username, password FROM users WHERE username = '{Username}'";
+            selectUserReader = selectUserCmd.ExecuteReader();
             switch (register)
             {
                 case true:
-                    InsertData(sqlite_conn);
+                    if (selectUserReader.HasRows)
+                    {
+                        ErrorMessage = "Username is al in gebruik";
+                        ErrorVisibility = Visibility.Visible;
+                        return;
+                    }
+                    string passwordHash = BC.EnhancedHashPassword(Password);
+                    SQLiteCommand registerCmd;
+                    registerCmd = sqlite_conn.CreateCommand();
+                    registerCmd.CommandText = $"INSERT INTO users(username, password, email) VALUES('{Username}', '{passwordHash}', '{Email}'); ";
+                    registerCmd.ExecuteNonQuery();
                     break;
                 case false:
+                    if (!selectUserReader.HasRows)
+                    {
+                        ErrorMessage = "Account niet gevonden";
+                        ErrorVisibility = Visibility.Visible;
+                    }
+                    string retrievedHash = "";
+                    if (selectUserReader.Read())
+                    {
+                        retrievedHash = selectUserReader["password"].ToString();
+                    }
 
+                    bool verifyPassword = BC.EnhancedVerify(Password, retrievedHash);
+
+                    Debug.WriteLine(verifyPassword);
                     break;
             }
         }
@@ -53,7 +113,7 @@ namespace C3_schoolvoetbal_goksysteem.ViewModel
             SQLiteConnection sqlite_conn;
             // Create a new database connection:
             string DBName = ApplicationData.Current.LocalFolder.Path + @"\database.db";
-            System.Diagnostics.Debug.WriteLine(DBName);
+            Debug.WriteLine(DBName);
             sqlite_conn = new SQLiteConnection($"Data Source = {DBName}; Version = 3; Compress = True; ");
             // Open the connection:
             try
@@ -106,5 +166,19 @@ namespace C3_schoolvoetbal_goksysteem.ViewModel
             }
             conn.Close();
         }
+
+        private void Set<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            if (Equals(storage, value))
+            {
+                return;
+            }
+
+            storage = value;
+            OnPropertyChanged(propertyName);
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

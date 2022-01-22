@@ -120,3 +120,5 @@ C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-gok
 C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\obj\x64\Debug\C3-schoolvoetbal-goksysteem.csproj.AssemblyReference.cache
+C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\BCrypt.Net-Next.dll
+C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
