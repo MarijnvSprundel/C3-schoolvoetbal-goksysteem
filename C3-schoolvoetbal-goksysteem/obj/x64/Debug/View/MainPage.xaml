@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="C3_schoolvoetbal_goksysteem.MainPage"
+    x:Class="C3_schoolvoetbal_goksysteem.View.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:C3_schoolvoetbal_goksysteem"
@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
 
     <Page.DataContext>
-        <ViewModel:ViewModel/>
+        <ViewModel:MainPageViewModel/>
     </Page.DataContext>
 
     <Grid RequestedTheme="Light">

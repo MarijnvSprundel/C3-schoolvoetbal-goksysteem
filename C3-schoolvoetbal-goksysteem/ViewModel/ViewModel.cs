@@ -8,11 +8,15 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Windows.Storage;
 using Windows.UI.Xaml;
+using C3_schoolvoetbal_goksysteem.Model;
+using C3_schoolvoetbal_goksysteem.View;
+using Windows.UI.Xaml.Controls;
 
 namespace C3_schoolvoetbal_goksysteem.ViewModel
 {
     public class ViewModel: INotifyPropertyChanged
     {
+
         public string Username { get; set; }
         private string password;
         public string Password { get; set; }
@@ -87,12 +91,16 @@ namespace C3_schoolvoetbal_goksysteem.ViewModel
                     registerCmd = sqlite_conn.CreateCommand();
                     registerCmd.CommandText = $"INSERT INTO users(username, password, email) VALUES('{Username}', '{passwordHash}', '{Email}'); ";
                     registerCmd.ExecuteNonQuery();
+                    User.LoggedIn = true;
+                    User.Username = Username;
+                    User.Id = (int)selectUserReader["id"];
                     break;
                 case false:
                     if (!selectUserReader.HasRows)
                     {
                         ErrorMessage = "Account niet gevonden";
                         ErrorVisibility = Visibility.Visible;
+                        return;
                     }
                     string retrievedHash = "";
                     if (selectUserReader.Read())
@@ -102,7 +110,12 @@ namespace C3_schoolvoetbal_goksysteem.ViewModel
 
                     bool verifyPassword = BC.EnhancedVerify(Password, retrievedHash);
 
-                    Debug.WriteLine(verifyPassword);
+                    if (verifyPassword)
+                    {
+                        User.LoggedIn = true;
+                        User.Username = Username;
+                        User.Id = (int)selectUserReader["id"];
+                    }
                     break;
             }
         }

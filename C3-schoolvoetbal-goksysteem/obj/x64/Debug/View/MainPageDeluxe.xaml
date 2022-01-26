@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="C3_schoolvoetbal_goksysteem.View.MainPageDeluxe"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:C3_schoolvoetbal_goksysteem.View"
+    xmlns:ViewModel="using:C3_schoolvoetbal_goksysteem.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+
+    <Page.DataContext>
+        <ViewModel:MainPageDeluxeViewModel/>
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="25" Text="{Binding Username}" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+
+        <Grid Margin="0, 0, 0, 0" Grid.Column="1" VerticalAlignment="Center" CornerRadius="20,20,20,20" Background="#FFC2FFA5" Height="365">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="Main League" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"></TextBlock>
+            <Grid Grid.Row="1" Grid.Column="1" Margin="0, 10, 0, 10" Background="#FF8FE26F" CornerRadius="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Row1Team1}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="{Binding Row1Time}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Text="{Binding Row1Team2}"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1" Margin="0, 10, 0, 10" Background="#FF8FE26F" CornerRadius="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Row2Team1}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="{Binding Row2Time}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Text="{Binding Row2Team2}"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1" Margin="0, 10, 0, 10" Background="#FF8FE26F" CornerRadius="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Row3Team1}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="{Binding Row3Time}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Text="{Binding Row3Team2}"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1" Margin="0, 10, 0, 10" Background="#FF8FE26F" CornerRadius="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Row4Team1}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="{Binding Row4Time}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Text="{Binding Row4Team2}"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="1" Margin="0, 10, 0, 10" Background="#FF8FE26F" CornerRadius="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Row5Team1}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Text="{Binding Row5Time}"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Text="{Binding Row5Team2}"/>
+            </Grid>
+        </Grid>
+        <Button Content="Uitloggen" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="1"></Button>
+    </Grid>
+</Page>
+

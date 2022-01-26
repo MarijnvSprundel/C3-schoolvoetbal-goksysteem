@@ -43,6 +43,9 @@
     <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\macti\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
@@ -93,6 +96,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\View\MainPageDeluxe.xbf">
+      <PackagePath>View\MainPageDeluxe.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\macti\Documents\school\C3-schoolvoetbal-goksysteem\C3-schoolvoetbal-goksysteem\bin\x64\Debug\View\Login.xbf">
       <PackagePath>View\Login.xbf</PackagePath>

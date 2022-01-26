@@ -1,9 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Row5Team2" />
+    <RootPropertyPathName Name="Row5Time" />
+    <RootPropertyPathName Name="Row5Team1" />
+    <RootPropertyPathName Name="Row4Team2" />
+    <RootPropertyPathName Name="Row4Time" />
+    <RootPropertyPathName Name="Row4Team1" />
+    <RootPropertyPathName Name="Row3Team2" />
+    <RootPropertyPathName Name="Row3Time" />
+    <RootPropertyPathName Name="Row3Team1" />
+    <RootPropertyPathName Name="Row2Team2" />
+    <RootPropertyPathName Name="Row2Time" />
+    <RootPropertyPathName Name="Row2Team1" />
+    <RootPropertyPathName Name="Row1Team2" />
+    <RootPropertyPathName Name="Row1Time" />
+    <RootPropertyPathName Name="Row1Team1" />
+    <RootPropertyPathName Name="Username" />
     <RootPropertyPathName Name="LoginCommand" />
     <RootPropertyPathName Name="Password" />
-    <RootPropertyPathName Name="Username" />
     <RootPropertyPathName Name="ErrorMessage" />
     <RootPropertyPathName Name="ErrorVisibility" />
     <RootPropertyPathName Name="RegisterCommand" />
@@ -18,7 +33,53 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="C3_schoolvoetbal_goksysteem.ViewModel.ViewModel" />
+    <RootType FullName="C3_schoolvoetbal_goksysteem.ViewModel.MainPageDeluxeViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="RequestedTheme" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="C3_schoolvoetbal_goksysteem.View.MainPageDeluxe" />
+    <RootType FullName="C3_schoolvoetbal_goksysteem.ViewModel.LoginViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
@@ -26,16 +87,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Orientation" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="PlaceholderText" />
@@ -47,32 +98,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Password" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Command" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-    </RootType>
     <RootType FullName="C3_schoolvoetbal_goksysteem.View.Login" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Children" />
-      <RootMethod Name="GetColumn" />
-      <RootMethod Name="SetColumn" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="C3_schoolvoetbal_goksysteem.MainPage" />
+    <RootType FullName="C3_schoolvoetbal_goksysteem.ViewModel.MainPageViewModel" />
+    <RootType FullName="C3_schoolvoetbal_goksysteem.View.MainPage" />
+    <RootType FullName="C3_schoolvoetbal_goksysteem.ViewModel.RegisterViewModel" />
     <RootType FullName="C3_schoolvoetbal_goksysteem.View.Register" />
   </Roots.RootTypes>
 </Roots>
